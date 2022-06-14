@@ -1,11 +1,11 @@
-# souremapSearcher
+# sourcemap-searcher
 
 自动搜索网页有无sourcemap文件泄露
 
 使用方法
 
 ```bash
-npm i souremapsearcher -g
+npm i sourcemap-searcher -g
 sms https://www.bilibili.com
 ```
 
