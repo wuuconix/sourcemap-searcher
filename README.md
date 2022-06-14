@@ -1,0 +1,2 @@
+# souremapSearcher
+自动搜索网页有无sourcemap文件泄露
