@@ -1,0 +1,27 @@
+{
+  "name": "souremapsearcher",
+  "version": "1.0.0",
+  "description": "自动搜索网页有无sourcemap文件泄露",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "sms": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuuconix/souremapSearcher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuuconix/souremapSearcher/issues"
+  },
+  "homepage": "https://github.com/wuuconix/souremapSearcher#readme",
+  "dependencies": {
+    "jsdom": "^19.0.0",
+    "node-fetch": "^3.2.6"
+  }
+}
