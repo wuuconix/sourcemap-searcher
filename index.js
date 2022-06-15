@@ -15,6 +15,9 @@ const judge = (url, protocol, origin, href) => {
     } else if (!url.startsWith("http")) { //相对路径的js文件加上origin 构造完整url
         url = href.slice(0, href.lastIndexOf("/")) + "/" + url
     }
+    if (url.includes("?")) { //针对那些后面有query的文件 比如index.js?max_age=31536000
+        url = url.slice(0, url.indexOf("?"))
+    }
     if ((url.endsWith(".js") && !url.endsWith(".min.js")) || (url.endsWith(".css") && !url.endsWith(".min.css"))) { //加上.map构造出sourcemap文件路径
         url = `${url}.map`
         console.log(url)
